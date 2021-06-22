@@ -1,0 +1,26 @@
+.start {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    flex:1;
+    padding: 2em;
+}
+
+.field {
+    margin: 1.5em;
+}
+
+.place {
+    display: flex;
+    justify-content:flex-end;
+}
+
+th, td {
+    color:white;
+}
+
+.validations {
+    display:inline-block;
+}
