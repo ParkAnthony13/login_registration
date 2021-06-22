@@ -24,3 +24,8 @@ th, td {
 .validations {
     display:inline-block;
 }
+
+.success {
+    color:white;
+    background-color: green;
+}

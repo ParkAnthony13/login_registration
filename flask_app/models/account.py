@@ -70,6 +70,7 @@ class Account:
             is_valid = False
         if data['password'] != data['confirm']:
             flash("Passwords must Match","confirm")
+        flash(f"You have successfully logged in with : {data['email']}","success")
         return is_valid
 
     @staticmethod

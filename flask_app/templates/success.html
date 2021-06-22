@@ -19,18 +19,16 @@
                 <a href="/logout">Log Out</a>
                 {% endif %}
             </div>
-            <div class="validations">
-                {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                {% for message in messages %}
-                <p style="color: red;">{{ message }}</p>
-                {% endfor %}
-                {% endif %}
-                {% endwith %}
-            </div>
-            <div class="start">
-                <p>Success</p>
-                <p>log in status: </p>
+            <div class="start"></div>
+                <div class="validations">
+                    {% with messages = get_flashed_messages(category_filter=["success"]) %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <p class="success">{{ message }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div> 
             </div>
             <div class="list">
                 <table class="table table-dark table-hover">
